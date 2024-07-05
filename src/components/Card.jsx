@@ -78,7 +78,7 @@ function Cardbox({
             sx={{
               display: "flex",
               flexDirection: { md: "row", xs: "column" },
-              margin:"0 25px",
+              margin:"0 30px",
             }}
           >
             <Box
@@ -93,6 +93,7 @@ function Cardbox({
                 id="outlined-basic"
                 variant="outlined"
                 onChange={handleChange}
+                size="small"
                 sx={{
                   width: { lg: "100%", xs: "200%", md: "60%" },
                 }}
@@ -102,9 +103,9 @@ function Cardbox({
                 onClick={handleSearch}
                 sx={{
                   bgcolor: "#523b3b",
-                  padding: "1rem 2rem",
+                  padding: ".56rem 2rem",
                   fontSize: "0.8rem",
-                  marginLeft: "2px",
+                  marginLeft: "15px",
                   "&:hover": {
                     backgroundColor: "#606060",
                   },

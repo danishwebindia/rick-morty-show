@@ -35,6 +35,7 @@ export default function SortData({ showData, setDataShown }) {
             select
             label="Sort by Id"
             id="demo-simple-select"
+            size="small"
             value={sort}
             onChange={(e) => handleSort(e.target.value)}
           >
