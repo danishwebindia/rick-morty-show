@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import TextField from '@mui/material/TextField';
 import { useState } from "react";
 
 export default function SortData({ showData, setDataShown }) {
@@ -31,18 +31,16 @@ export default function SortData({ showData, setDataShown }) {
     <Box sx={{ display: "flex", justifyContent: { md: "flex-end", sx: "flex-start" } }}>
       <Box sx={{ width: { lg: "50%", xs: "100%" } }}>
         <FormControl sx={{ width: "100%" }}>
-          <InputLabel id="demo-simple-select-label" sx={{ color: "black" }}>
-            Sort by Id
-          </InputLabel>
-          <Select
-            labelId="demo-simple-select-label"
+          <TextField
+            select
+            label="Sort by Id"
             id="demo-simple-select"
             value={sort}
             onChange={(e) => handleSort(e.target.value)}
           >
             <MenuItem value="ASC">Ascending</MenuItem>
             <MenuItem value="DSC">Descending</MenuItem>
-          </Select>
+          </TextField>
         </FormControl>
       </Box>
     </Box>
