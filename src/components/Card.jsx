@@ -38,7 +38,7 @@ function Cardbox({
     textAlign: "start",
   }));
   const HeadingValue = styled(Typography)(() => ({
-    color: "#FF8C00",
+    color: "#fff",
     textAlign: "end",
     fontSize: { xs: "8px" },
   }));
@@ -78,10 +78,7 @@ function Cardbox({
             sx={{
               display: "flex",
               flexDirection: { md: "row", xs: "column" },
-              marginRight: "1rem",
-
-              marginBottom: "40px",
-              width: "100%",
+              margin:"0 25px",
             }}
           >
             <Box
@@ -89,8 +86,6 @@ function Cardbox({
                 display: "flex",
                 justifyContent: "flex-start",
                 alignItems: "flex-start",
-                marginLeft:"2px",
-                marginTop:"10px",
                 width: "100%",
               }}
             >
@@ -100,14 +95,13 @@ function Cardbox({
                 onChange={handleChange}
                 sx={{
                   width: { lg: "100%", xs: "200%", md: "60%" },
-                  marginBottom: { md: "0", xs: "1rem" },
                 }}
               />
               <Button
                 variant="contained"
                 onClick={handleSearch}
                 sx={{
-                  bgcolor: "grey",
+                  bgcolor: "#523b3b",
                   padding: "1rem 2rem",
                   fontSize: "0.8rem",
                   marginLeft: "2px",
@@ -186,12 +180,15 @@ function Cardbox({
                   <Card
                     sx={{
                       maxWidth: { xs: 400, md: 450 },
-                      height: { xs: "500px", md: "500px", lg: "500px" },
-
+                      height: { xs: "500px", md: "500px", lg: "475px" },
+                      paddingBottom:'0',
                       borderColor: "grey",
                       borderRadius: "12px",
-
-                      backgroundColor: "grey",
+                      margin:'15px',
+                      backgroundColor: "#523b3b",
+                      "&:hover": {
+                        boxShadow:"0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)"
+                  },
                     }}
                   >
                     <Box sx={{ position: "relative" }}>
@@ -238,6 +235,7 @@ function Cardbox({
                             orientation="horizontal"
                             flexItem
                             sx={{ bgcolor: "#a7a7a7" }}
+                            
                           />
                         }
                       >

@@ -71,14 +71,16 @@ export default function Filters({ state, handleChange }) {
             }}></Box>
           {visibleFilter ? (
             <>
-              <Stack spacing={2}>
+              <Stack spacing={2} sx={{
+                    borderRadius:"5px",
+                    background:"#F8F9F9",
+                    border: "1px solid #523b3b",
+              }}>
                 
 
                 <Box
                   sx={{
-                    paddingTop:"30px",
                     display: "flex",
-                    border: "2px solid grey",
                     padding: "1rem",
                   }}
                 >
@@ -110,7 +112,6 @@ export default function Filters({ state, handleChange }) {
                 <Box
                   sx={{
                     display: "flex",
-                    border: "2px solid grey",
                     padding: "1rem",
                   }}
                 >
@@ -142,7 +143,6 @@ export default function Filters({ state, handleChange }) {
                 <Box
                   sx={{
                     display: "flex",
-                    border: "2px solid grey",
                     padding: "1rem",
                   }}
                 >

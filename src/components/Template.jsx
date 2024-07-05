@@ -136,7 +136,7 @@ function Layout() {
 
   return (
     <Box>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box >
         <AppBar position="static">
           <Toolbar>
             <IconButton
